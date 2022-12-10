@@ -8,6 +8,7 @@ const productSchema=new mongoose.Schema(
         description: { type: String, require: true },
         image: { type: String, require: true }, 
         rate: { type: Number, require: true }, 
+        amount: { type: Number, default:1 }, 
     },
     {
         versionKey:false,
